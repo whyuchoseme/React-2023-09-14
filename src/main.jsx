@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client';
-import { restaurants } from './constants/mock.js';
+// import { restaurants } from './constants/mock.js';
+import { MainPage } from './pages/main/component.jsx';
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
-root.render(
+/* root.render(
   <div>
     <h2><b><u>{restaurants[0].name}</u></b></h2>
     <h3><b>Menu:</b></h3>
@@ -50,4 +51,6 @@ root.render(
     <br />
     <li>{restaurants[3].reviews[1].text}</li>
   </div>
-);
+); */
+
+root.render(<MainPage />);
