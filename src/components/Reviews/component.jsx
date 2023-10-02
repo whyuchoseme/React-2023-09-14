@@ -1,10 +1,14 @@
-import { restaurants } from "../../constants/mock"
+import { Review } from "../Review/component";
 
-export const ReviewsNameText = ({ index }) => {
-    
+export const Reviews = ({ reviews }) => {
+
     return (
-            restaurants[index].reviews.map((item) => (
-                <li>{item.user}: {item.text}</li>
-            ))
+        <ul>
+            {reviews.map((review) => (
+                <li key={review.id}>
+                    <Review review={review} />
+                </li>
+            ))}
+        </ul>
     )
 }
