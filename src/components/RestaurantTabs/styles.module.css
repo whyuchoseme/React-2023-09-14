@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.tab {
+    margin-right: 2px;
+}
+
+.active {
+    background-color: red;
+}
