@@ -2,13 +2,11 @@ import classNames from "classnames"
 import { Button } from "../Button/component"
 import styles from "./styles.module.css"
 
-export const Tab = ({ title, onClick, className, isActive}) => {
+export const Tab = ({ title, onClick, className}) => {
 
     return (
         <Button 
-            className={classNames(className, styles.root, {
-                [styles.active]: isActive,
-            })}
+            className={classNames(styles.root, className)}
             title={title}
             onClick={onClick}
         />

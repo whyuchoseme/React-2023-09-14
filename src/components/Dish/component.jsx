@@ -20,7 +20,7 @@ export const Dish = ({ dish, className }) => {
                 onClick={minus} 
                 disabled={amount === 0} 
             />
-            {amount}
+                {amount}
             <Button
                 className={classNames({
                     [styles.disabledPlus]: amount === 5,

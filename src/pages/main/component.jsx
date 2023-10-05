@@ -14,6 +14,7 @@ export const MainPage = () => {
          <Header className={styles.header}/>
          <div className={styles.content}>
             <RestaurantTabs
+               activeTab = {activeRestaurantIndex}
                restaurants = {restaurants}
                onTabSelect = {setActiveRestaurantIndex} 
             /> 

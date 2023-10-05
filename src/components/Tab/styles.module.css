@@ -1,7 +1,6 @@
 .root {
     width: 157px;
     height: 25px;
-    font-weight: 600;
     background-color: transparent;
     border-radius: 12px;
     border: 1px solid rgb(223, 222, 222);;
@@ -28,12 +27,6 @@
 }
 
 .root:hover {
-    color: white;
-    color: black;
-    transition: color 2s;
+    font-weight: 600;
     transform: scale(1.03);
 }
-
-/* .active {
-    background-color: red;
-} */
