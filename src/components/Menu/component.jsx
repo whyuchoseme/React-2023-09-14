@@ -1,10 +1,11 @@
+import classNames from "classnames"
 import { Dish } from "../Dish/component"
 import styles from "./styles.module.css"
 
-export const Menu = ({ dishes }) => {
+export const Menu = ({ dishes, className }) => {
 
     return  (
-        <ul className={styles.root}>
+        <ul className={classNames(styles.root, className)}>
             {dishes.map((dish) => (
                 <li key={dish.id}>
                     <Dish dish={dish}

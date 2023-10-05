@@ -1,10 +1,11 @@
+import classNames from "classnames";
 import { Review } from "../Review/component";
 import styles from "./styles.module.css"
 
-export const Reviews = ({ reviews }) => {
+export const Reviews = ({ reviews, className }) => {
 
     return (
-        <ul className={styles.root}>
+        <ul className={classNames(styles.root, className)}>
             {reviews.map((review) => (
                 <li key={review.id}>
                     <Review review={review}

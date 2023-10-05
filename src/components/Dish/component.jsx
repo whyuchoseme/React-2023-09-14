@@ -1,8 +1,5 @@
-import classNames from "classnames";
 import { useState } from "react"
 import { Button } from "../Button/component"
-
-import styles from "./styles.module.css"
 
 export const Dish = ({ dish, className }) => {
     const [amount, setAmount] = useState(0);
@@ -13,19 +10,13 @@ export const Dish = ({ dish, className }) => {
     return (
         <div className={className}>
             {dish.name} - <Button
-                className={classNames({
-                    [styles.disabledMinus]: amount === 0,
-                })}
-                title={'-'} 
+                children={'-'}
                 onClick={minus} 
                 disabled={amount === 0} 
             />
-            {amount}
+                {amount}
             <Button
-                className={classNames({
-                    [styles.disabledPlus]: amount === 5,
-                })}
-                title={'+'}
+                children={'+'}
                 onClick={plus} 
                 disabled={amount === 5}
             />

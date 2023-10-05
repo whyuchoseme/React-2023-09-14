@@ -7,8 +7,20 @@
 
 .tab {
     margin-right: 2px;
+    z-index: 1;
 }
 
 .active {
-    background-color: red;
+    font-weight: 600;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.active::before {
+    background-color: transparent;
+    transition: none;
+}
+
+.active:hover {
+    transform: none;
 }

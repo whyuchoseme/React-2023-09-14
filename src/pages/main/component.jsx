@@ -14,12 +14,13 @@ export const MainPage = () => {
          <Header className={styles.header}/>
          <div className={styles.content}>
             <RestaurantTabs
+               activeTab = {activeRestaurantIndex}
                restaurants = {restaurants}
                onTabSelect = {setActiveRestaurantIndex} 
             /> 
             <Restaurant restaurant={restaurants[activeRestaurantIndex]} />
          </div>
-         <Footer />
+         <Footer className={styles.footer}/>
       </div>
    )
 }
