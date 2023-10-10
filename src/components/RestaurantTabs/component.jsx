@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { Tab } from "../Tab/component";
 import styles from "./styles.module.css"
 
-export const RestaurantTabs = ({ restaurants, onTabSelect , activeTab}) => {
+export const RestaurantTabs = ({ restaurants, onTabSelect , activeTab }) => {
 
     return (
         <div className={styles.root}>
@@ -12,11 +12,12 @@ export const RestaurantTabs = ({ restaurants, onTabSelect , activeTab}) => {
                         [styles.active]: activeTab === index,
                     })}
                     key={restaurant.id}
-                    title={restaurant.name}
                     onClick={() => {
                         onTabSelect(index);
                     }}
-                />
+                >
+                    {restaurant.name}
+                </Tab>
             ))}
         </div>
     ) 
