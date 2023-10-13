@@ -1,14 +1,14 @@
-import { Button } from "../Button/component"
+import { Button } from "../Button/component";
 
-export const Tab = ({ children, onClick, className }) => {
-
-    return (
-        <Button 
-            className={className}
-            onClick={onClick}
-            viewVariat = 'rootTab'
-        >
-            {children}
-        </Button>
-    ) 
-}
+export const Tab = ({ children, onClick, className, isActive }) => {
+  return (
+    <Button
+      onClick={onClick}
+      className={className}
+      type="tabButton"
+      viewVariant={isActive ? "active" : false}
+    >
+      {children}
+    </Button>
+  );
+};
