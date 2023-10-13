@@ -1,9 +1,13 @@
 .root {
-    border-radius: 12px;
-    border: 1px solid rgb(223, 222, 222);
-    background-color: white;
+  border-radius: 12px;
+  border: 1px solid rgb(223, 222, 222);
+  background-color: white;
+}
+
+.restaurantMenu {
+  margin-left: 1.25em;
 }
 
 .dish {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }

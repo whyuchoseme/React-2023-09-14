@@ -1,26 +1,26 @@
 .root {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .tab {
-    margin-right: 2px;
-    z-index: 1;
+  margin-right: 2px;
+  z-index: 1;
 }
 
 .active {
-    font-weight: 600;
-    background-color: white;
-    border: 2px solid black;
+  font-weight: 600;
+  background-color: white;
+  border: 2px solid black;
 }
 
 .active::before {
-    background-color: transparent;
-    transition: none;
+  background-color: transparent;
+  transition: none;
 }
 
 .active:hover {
-    transform: none;
+  transform: none;
 }

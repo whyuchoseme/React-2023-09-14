@@ -3,18 +3,18 @@ import React, { useContext, useState } from "react";
 export const ThemeContext = React.createContext();
 
 export const useTheme = () => {
-    return useContext(ThemeContext);
-}
+  return useContext(ThemeContext);
+};
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('default');
-    const switchTheme = () => {
-        setTheme(theme === 'default' ? 'dark' : 'default');
-    }
+  const [theme, setTheme] = useState("default");
+  const switchTheme = () => {
+    setTheme(theme === "default" ? "blue" : "default");
+  };
 
-    return (
-        <ThemeContext.Provider value={{ theme, switchTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    )
-}
+  return (
+    <ThemeContext.Provider value={{ theme, switchTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
